@@ -22,7 +22,7 @@ public class MoveTowards : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.GetComponent<PLAYERMOVEMENT>())
         {
             Destroy(target);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);

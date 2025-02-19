@@ -43,9 +43,6 @@ public class PlayerAnimationController : MonoBehaviour
         }
     }
 
-        public void PlayPew(float volume)
-    {
-        //AudioManager.instance.PlayAudio(pewClip, "pewpew", false, volume);
-    }
+    
 }
 
